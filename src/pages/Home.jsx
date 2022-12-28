@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import categoriesApi from '../api/Categories'
 import Category from '../components/Category'
 import CopyRight from '../components/CopyRight'
 import Footer from '../components/Footer'
@@ -13,6 +14,9 @@ import SoundList from './SoundList'
 import WatchList from './WatchList'
 
 const Home = () => {
+
+
+
   return <React.Fragment>
     <Slider />
     <Policy />

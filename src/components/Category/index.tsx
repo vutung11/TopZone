@@ -12,18 +12,18 @@ const Category = () => {
     categoriesApi.getAll().then((response) => setCategory(response));
   }, [])
   if (category)
-    console.log(category);
+    console.log(category)
 
   return (
     <div className='container_category'>
-      {category && category.data && category.data.map((item, idx) => (
+      {/* {category && category.data && category.data.map((item, idx) => (
         <NavLink to={`/${item.attributes.category}`} key={idx}>
           <div className="container_category--box">
             <img className='iphone' src={item.attributes.image_category} alt="" />
             <p>{item.attributes.name_category}</p>
           </div>
         </NavLink>
-      ))}
+      ))} */}
     </div>
   )
 }
